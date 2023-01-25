@@ -6,6 +6,6 @@ os.system("mkdir "+name)
 os.system("dpkg -x "+deb+" ./"+name)
 y = input("你要安装吗(y/n):")
 if y == y:
-    os.system("sudo cp -frp ./"+name+" /")
+    os.system("sudo cp -frp ./"+name+"/* /")
 else:
     os.system("exit")
